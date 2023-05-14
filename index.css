@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Lato';
+    position: relative;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    max-width: 1136px;
+    max-height: 68px;
+    padding: 22px 60px;
+}
+.dash {
+    cursor: pointer;
+}
+.heading{
+    width: 100%;
+    max-width: 1136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-inline: 60px; 
+}
+.heading p {
+    margin-top: -15px;
+}
+a {
+    text-decoration: none;
+    color: #FF5403;
+}
+.time-frame {
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+    gap: 12px;
+    padding-inline: 60px;
+    font-size: min(14px, 2vw);
+}
+.time-frame li {
+    min-width: 5.2vw;
+    border: 1px solid #EFF1F6;
+    border-radius: 80px;
+    text-align: center;
+    padding: 7px 12px;
+    transition: all .5s ease;
+}
+.time-frame li:hover {
+    border: 1px solid #FF5403;
+    background-color: #FFDDCD;
+    cursor: pointer;
+}
+.chart-container {
+    position: relative;
+    width: clamp(500px, 87%, 1016px);
+    max-height: 576px;
+    margin: 24px 60px;
+    padding: 22px 24px;
+    border: 1px solid #EFF1F6;
+    border-radius: 12px;
+}
+.chart-container h1 {
+    font-size: 40px;
+}
+.chart-flex {
+    width: 100%;
+}
+
+.chart {
+    position: relative;
+    width: 100%;
+    margin-top: 34px;
+    font-size: 14px;
+}
+.li1 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.li2 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.li3 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.li4 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.li5 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.li6 div {
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    width: min(913px, 90%);
+    left: 47px;
+    margin-left: 23px;
+    opacity: .5;
+}
+.image {
+    width: min(795px, 70%);
+    max-height: 281px;
+    position: absolute;
+    top: 221px;
+    left: 139px;
+}
+.bottom-chart {
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0;
+    margin-left: 19.3%;
+}
+.bottom-chart li {
+    margin-right: 6.7%;
+}
+.piechart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.piechart-info{
+    width: 500px;
+    height: 326px;
+    border-radius: 12px;
+    border: 1px solid #EFF1F6;
+    margin: 24px 0px 60px 44px;
+    padding: 24px;
+}
+.piechart-header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.small {
+    font-size: 14px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list li {
+    min-width: 87px;
+    margin-bottom: 8%;
+}
+.other {
+    margin-left: 3.5%;
+}
+.image-small {
+    height: 15px;
+}
+.sidebar {
+    width: 304px;
+    height: 100vh;
+    padding: 39px 0 0 60px;
+    background-color: white;
+    margin-top: 39px;
+    border: 1px solid #EFF1F6;
+    overflow-y: scroll;
+    position: absolute;
+    top: -39px;
+    left: -340px;
+    transition: all 0.5s ease;
+}
+.sidebar h3 {
+    color: #FF5403;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.sidebar-list li {
+    margin-bottom: 24px;
+}
+.sidebar-header {
+    margin-top: 42px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+.dots {
+    margin-left: 20px;
+}
+.clear {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    cursor: pointer;
+}
+/*.chart::after {
+    position: absolute;
+    content: "";
+    border-top: 2px dashed gray;
+    width: 90%;
+    margin-left: 15px;
+    top: 50%;
+}*/
